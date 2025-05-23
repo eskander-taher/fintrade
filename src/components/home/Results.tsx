@@ -21,14 +21,14 @@ const Results: React.FC = () => {
   };
 
   const results = [
-    { id: 1, image: '/assets/results/result-1.jpg', percentage: '487.32' },
-    { id: 2, image: '/assets/results/result-2.jpg', percentage: '293.15' },
-    { id: 3, image: '/assets/results/result-3.jpg', percentage: '156.89' },
-    { id: 4, image: '/assets/results/result-4.jpg', percentage: '421.67' },
-    { id: 5, image: '/assets/results/result-5.jpg', percentage: '378.44' },
-    { id: 6, image: '/assets/results/result-6.jpg', percentage: '245.91' },
-    { id: 7, image: '/assets/results/result-7.jpg', percentage: '532.18' },
-    { id: 8, image: '/assets/results/result-8.jpg', percentage: '189.76' }
+    { id: 1, image: '/assets/results/result-1.jpg' },
+    { id: 2, image: '/assets/results/result-2.jpg' },
+    { id: 3, image: '/assets/results/result-3.jpg' },
+    { id: 4, image: '/assets/results/result-4.jpg' },
+    { id: 5, image: '/assets/results/result-5.jpg' },
+    { id: 6, image: '/assets/results/result-6.jpg' },
+    { id: 7, image: '/assets/results/result-7.jpg' },
+    { id: 8, image: '/assets/results/result-8.jpg' }
   ];
 
   return (
@@ -63,7 +63,6 @@ const Results: React.FC = () => {
               </div>
               <div className="absolute bottom-4 left-4 right-4">
                 <p className="text-sm text-gray-300">Trading Result #{result.id}</p>
-                <p className="text-lg font-semibold text-white">+{result.percentage}%</p>
               </div>
             </div>
           </button>
@@ -99,7 +98,7 @@ const Results: React.FC = () => {
               />
               <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
                 <p className="text-lg font-semibold text-white">
-                  Trading Result #{selectedImage + 1}: +{results[selectedImage].percentage}%
+                  Trading Result #{selectedImage + 1}
                 </p>
               </div>
             </div>
