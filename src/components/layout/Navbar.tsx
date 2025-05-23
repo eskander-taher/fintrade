@@ -25,8 +25,13 @@ const Navbar: React.FC = () => {
     >
       <Container>
         <nav className="flex items-center justify-between">
-          <Link to="/" className="text-white font-bold text-xl md:text-2xl flex items-center">
-            <span className="text-blue-500">Fin</span>Trade Master
+          <Link to="/" className="text-white font-bold text-xl md:text-2xl flex items-center space-x-2">
+            <img 
+              src="/assets/logo.png" 
+              alt="FinTrade Master Logo" 
+              className="w-8 h-8 md:w-10 md:h-10"
+            />
+            <span><span className="text-blue-500">Fin</span>Trade Master</span>
           </Link>
 
           {/* Desktop Navigation */}

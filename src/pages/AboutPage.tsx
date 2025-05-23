@@ -4,6 +4,7 @@ import AboutFounder from '../components/about/AboutFounder';
 import CoreValues from '../components/about/CoreValues';
 import WhoWeHelp from '../components/about/WhoWeHelp';
 import Company from '../components/about/Company';
+import Certificates from '../components/about/Certificates';
 
 const AboutPage: React.FC = () => {
   useEffect(() => {
@@ -16,6 +17,7 @@ const AboutPage: React.FC = () => {
       <AboutHero />
       <AboutFounder />
       <CoreValues />
+      <Certificates />
       <WhoWeHelp />
       <Company />
     </main>
