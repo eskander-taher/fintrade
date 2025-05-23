@@ -1,8 +1,8 @@
 import React from 'react';
 import Section from '../ui/Section';
 import { avatarTargets } from '../../constants/data';
-import Button from '../ui/Button';
 import { CheckCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const WhoWeHelp: React.FC = () => {
   return (
@@ -29,7 +29,12 @@ const WhoWeHelp: React.FC = () => {
             We've helped over 1,200 students flip their mindset and build real skill.
           </p>
           
-          <Button href="#apply">Apply Now</Button>
+          <Link 
+            to="/apply"
+            className="inline-block bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full transition-colors"
+          >
+            Apply Now
+          </Link>
         </div>
         
         <div className="relative">

@@ -2,8 +2,7 @@ import React, { useEffect } from 'react';
 import AboutHero from '../components/about/AboutHero';
 import AboutFounder from '../components/about/AboutFounder';
 import CoreValues from '../components/about/CoreValues';
-import WhoWeHelp from '../components/about/WhoWeHelp';
-import Company from '../components/about/Company';
+import WhoWeHelp from "../components/about/WhoWeHelp";
 import Certificates from '../components/about/Certificates';
 
 const AboutPage: React.FC = () => {
@@ -13,14 +12,13 @@ const AboutPage: React.FC = () => {
   }, []);
 
   return (
-    <main>
-      <AboutHero />
-      <AboutFounder />
-      <CoreValues />
-      <Certificates />
-      <WhoWeHelp />
-      <Company />
-    </main>
+		<main>
+			<AboutHero />
+			<AboutFounder />
+			<Certificates />
+			<CoreValues />
+			<WhoWeHelp />
+		</main>
   );
 };
 

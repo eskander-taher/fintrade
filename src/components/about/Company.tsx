@@ -1,6 +1,6 @@
 import React from 'react';
 import Section from '../ui/Section';
-import Button from '../ui/Button';
+
 
 const Company: React.FC = () => {
   return (

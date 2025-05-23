@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Button from '../ui/Button';
+import { Link } from 'react-router-dom';
 
 const Hero: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -14,7 +14,6 @@ const Hero: React.FC = () => {
 
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
-      {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
         <div 
           className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/80 to-black z-10"
@@ -45,14 +44,16 @@ const Hero: React.FC = () => {
           </p>
           
           <div className="flex justify-center">
-            <Button href="#apply" size="lg">
+            <Link 
+              to="/apply"
+              className="inline-block bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors"
+            >
               APPLY NOW
-            </Button>
+            </Link>
           </div>
         </div>
       </div>
       
-      {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
         <div className="w-8 h-12 rounded-full border-2 border-white/30 flex justify-center">
           <div className="w-1 h-3 bg-blue-500 rounded-full mt-2 animate-pulse"></div>

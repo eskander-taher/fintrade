@@ -1,34 +1,38 @@
 import { ValueStackItem, CoreValue, FAQ } from "../types";
 
 export const valueStack: ValueStackItem[] = [
-  {
-    id: 1,
-    title: "From Paycheck to Pro Trader (Free eBook)",
-    description: "Your entry point — a 20+ page crash course on the exact strategy Nestor used to pass funded challenges, flip small accounts, and create a repeatable, low-stress trading routine. Perfect for beginners or burned-out traders looking for real structure.",
-    ctaText: "Download It Free",
-    ctaLink: "#download",
-  },
-  {
-    id: 2,
-    title: "The FinTrade Skool Community",
-    description: "Private members-only community where traders get weekly prep sessions, market breakdowns, trade ideas, accountability, and access to exclusive tools. It's where struggling traders get their questions answered and find a winning environment.",
-    ctaText: "Join the Community for $37",
-    ctaLink: "#join-community",
-  },
-  {
-    id: 3,
-    title: "The Trader Ascension Lab™",
-    description: "A step-by-step on-demand training system that helps you go from \"random trades and YouTube confusion\" to executing like a funded professional — with live session replays, psychological rewiring, and journaling mastery built-in.",
-    ctaText: "Apply NOW",
-    ctaLink: "#apply",
-  },
-  {
-    id: 4,
-    title: "The FinTrade Elite Circle™",
-    description: "High-touch mentorship for serious traders ready to hit 5-figure months and build full-time income. Includes direct mentorship from Nestor, live trading sessions, custom feedback, scaling plans, and elite-level mindset training.",
-    ctaText: "Apply to Join the Circle",
-    ctaLink: "#apply-elite",
-  },
+	{
+		id: 1,
+		title: "From Paycheck to Pro Trader (Free eBook)",
+		description:
+			"Your entry point — a 20+ page crash course on the exact strategy Nestor used to pass funded challenges, flip small accounts, and create a repeatable, low-stress trading routine. Perfect for beginners or burned-out traders looking for real structure.",
+		ctaText: "Download It Free",
+		ctaLink: "/apply",
+	},
+	{
+		id: 2,
+		title: "The FinTrade Skool Community",
+		description:
+			"Private members-only community where traders get weekly prep sessions, market breakdowns, trade ideas, accountability, and access to exclusive tools. It's where struggling traders get their questions answered and find a winning environment.",
+		ctaText: "Join the Community for $37",
+		ctaLink: "https://www.skool.com/fintrade-master-academy-5270",
+	},
+	{
+		id: 3,
+		title: "The Trader Ascension Lab™",
+		description:
+			'A step-by-step on-demand training system that helps you go from "random trades and YouTube confusion" to executing like a funded professional — with live session replays, psychological rewiring, and journaling mastery built-in.',
+		ctaText: "Apply NOW",
+		ctaLink: "/apply",
+	},
+	{
+		id: 4,
+		title: "The FinTrade Elite Circle™",
+		description:
+			"High-touch mentorship for serious traders ready to hit 5-figure months and build full-time income. Includes direct mentorship from Nestor, live trading sessions, custom feedback, scaling plans, and elite-level mindset training.",
+		ctaText: "Apply to Join the Circle",
+		ctaLink: "/apply",
+	},
 ];
 
 export const forYouPoints = [

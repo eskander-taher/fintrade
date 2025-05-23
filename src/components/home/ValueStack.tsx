@@ -1,7 +1,7 @@
 import React from 'react';
 import Section from '../ui/Section';
 import { valueStack } from '../../constants/data';
-import Button from '../ui/Button';
+import { Link } from 'react-router-dom';
 
 const ValueStack: React.FC = () => {
   return (
@@ -21,7 +21,6 @@ const ValueStack: React.FC = () => {
             key={item.id}
             className="bg-gray-900/70 backdrop-blur-sm p-8 rounded-xl border border-gray-800 transition-all duration-300 hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/10 relative overflow-hidden group"
           >
-            {/* Subtle background glow effect */}
             <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             
             <div className="relative z-10">
@@ -36,13 +35,12 @@ const ValueStack: React.FC = () => {
                 {item.description}
               </p>
               
-              <Button 
-                href={item.id === 2 ? "https://www.skool.com/fintrade-master-academy-5270/about" : "/contact"}
-                variant="secondary" 
-                className="mt-2"
+              <Link 
+                to={item.ctaLink}
+                className="inline-block bg-transparent border-2 border-blue-500 text-blue-500 hover:bg-blue-500/10 px-6 py-2 rounded-full transition-colors"
               >
                 {item.ctaText}
-              </Button>
+              </Link>
             </div>
           </div>
         ))}
