@@ -20,7 +20,7 @@ const BookCall: React.FC = () => {
 						</div>
 
 						{/* Calendar embed */}
-						<div className="w-full h-[600px]">
+						<div className="w-full h-[1000px]">
 							<iframe
 								src="https://link.kourse.com/widget/booking/mtoNDQaK81z0KpWA6Nsp"
 								style={{ width: "100%", height: "100%", border: "none" }}

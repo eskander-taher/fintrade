@@ -43,18 +43,18 @@ const Hero: React.FC = () => {
             Get the exact framework that's helped everyday traders grow accounts, reduce stress, and build a real income in just 4 hours per week.
           </p>
           
-          <div className="flex justify-center">
+          
             <Link 
               to="/apply"
-              className="inline-block bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors"
+              className="ml-7 inline-block bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors"
             >
               APPLY NOW
             </Link>
-          </div>
+          
         </div>
       </div>
       
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
+      <div className="hidden sm:block absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
         <div className="w-8 h-12 rounded-full border-2 border-white/30 flex justify-center">
           <div className="w-1 h-3 bg-blue-500 rounded-full mt-2 animate-pulse"></div>
         </div>
